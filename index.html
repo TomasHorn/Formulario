@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 4 Creacion de Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="Introduccion">
+        <h1>Experiencia de Usuario</h1>
+            <p>En esta pagina se busca conocer cual es tu experiencia en el curso "Bootcamp Fullstack" dictado en la UNTREF.</p>
+            <p>A lo largo del curso hemos visto contenidos de HTML y CSS, en este caso la actividad es realizar un formulario, para ello decidi hacer un formulario acerca de la experiencia que los alumnos pueden haber tenido durante el transcurso del curso. Dicho formulario contara con una parte en la cual se deberan poner los datos personales como el nombre y apellido, el correo electronico y la edad, ademas se preguntara si ya participo en los cursos anteriores y por ultimo tendra una parte de seleccion del nivel de satisfaccion y un apartado para que realice comentarios.</p>
+    </section>
+    <form action="https://submit-form.com/6KsilOIwE" method="POST">
+        <h2>Encuesta de Satisfacción</h2>
+        <div class="Formulario_Completar">
+            <section class="Nombre">
+                <label for="nombre" class="label required">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+            </section>
+        </div>
+        <div class="Formulario_Completar">
+            <section class="E-Mail">
+                <label for="email" class="label required">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            </section>
+        </div>
+        <div class="Formulario_Completar">
+            <section class="Edad">
+                <label for="edad" class="label required">Edad:</label>
+                <input type="number" id="edad" name="edad" required><br><br>
+            </section>
+        </div>
+        <section class="Preguntas">
+            <label for="Pregunta" class="label required">¿Participo de algun curso anterior?</label>
+            <input type="radio" id="Ambos" name="Curso" value="Si, Ambos">
+            <label for="Cursos">Si, Ambos</label><br> 
+            <input type="radio" id="Uno" name="Curso" value="Solo Uno">
+            <label for="Curso">Solo Uno</label><br>
+            <input type="radio" id="Ninguno" name="Curso" value="No">
+            <label for="Ninguno">Ninguno</label><br>
+        </section>
+        <section class="Nivel-de-Satisfaccion" class="label required">
+            <label for="satisfaccion">Nivel de satisfacción:</label>
+            <select id="satisfaccion" name="satisfaccion" required>
+                <option value="">Seleccione...</option>
+                <option value="Muy Satisfecho">Muy Satisfecho</option>
+                <option value="Satisfecho">Satisfecho</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Insatisfecho">Insatisfecho</option>
+                <option value="Muy Insatisfecho">Muy Insatisfecho</option>
+            </select><br><br>
+        </section>
+        <section class="Comentarios">
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+        </section>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+    </form>
+</body>
+</html>
